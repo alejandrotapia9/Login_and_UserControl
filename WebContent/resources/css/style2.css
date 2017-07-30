@@ -1,7 +1,7 @@
 
 body{	
 	font-family:"Trebuchet MS", Helvetica, sans-serif;	
-	background-image:url(https://upload.wikimedia.org/wikipedia/commons/2/22/GABRIEL_VELLA_vs_ROMINHO_51.jpg);
+	background-image:url(http://www.proecuador.gob.ec/sectores/cafe/img/CAFE11.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -73,7 +73,7 @@ h2{
 
 #header-table {
 	width: 100%; 
-	background: #0066B5; 
+	background: #b30f0f; 
 	margin-top: 0px; 
 	margin-bottom: 15px;
 	padding:15px 0px 15px 0px; 
@@ -100,6 +100,18 @@ h2{
 	font-size: 12px;
 	font-weight: bold;
 	width: 120px; 
+	padding: 5px 10px; 
+	margin-left:25%;
+	margin-bottom: 2px;
+	background: #cccccc;
+}
+
+.add-button {
+	border: 1px solid #666; 
+	border-radius: 5px; 	
+	font-size: 12px;
+	font-weight: bold;
+	width: 150px; 
 	padding: 5px 10px; 
 	margin-left:25%;
 	margin-bottom: 2px;

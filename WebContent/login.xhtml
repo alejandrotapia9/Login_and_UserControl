@@ -14,11 +14,11 @@
 		<h2>Iniciar Sesión</h2>
 		
 		<h:form styleClass="form-container">
-			<label>Username: </label><h:inputText  styleClass="login-text" value="#{loginc.usr}"/>
+			<label>Username: </label><h:inputText  styleClass="login-text" value="#{loginController.usr}"/>
 			<br/><br/>
-			<label>Password: </label><h:inputSecret styleClass="login-text" value="#{loginc.pwd}"/>
+			<label>Password: </label><h:inputSecret styleClass="login-text" value="#{loginController.pwd}"/>
 			<br/><br/>			
-			<h:commandButton value="Login" styleClass="add-student-button" action="#{loginc.autenticar()}"/>
+			<h:commandButton value="Login" styleClass="add-student-button" action="#{loginController.autenticar()}"/>
 			<br></br>
 			<h:button value="Registrarse" styleClass="add-student-button" outcome="registrarse"/>
 			

@@ -7,7 +7,7 @@ import javax.faces.bean.SessionScoped;
 
 
 
-@ManagedBean(name = "loginc")
+@ManagedBean
 @SessionScoped
 public class LoginController {
 	
