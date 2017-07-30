@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:a="http://java.sun.com/jsf/facelets"
+    xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+  <title>COMPETIDOR</title>
+  <h:outputStylesheet library="css" name="style2.css"  />
+</h:head>
+
+<h:body class="centered">
+	
+	<br/><br/>
+	<div class="container">
+	
+		<H2>Bienvenido #{login.usr}!</H2>
+		<h:form styleClass="form-container">
+				<label>Nombre: </label><h:inputText id="nombre"
+					styleClass="login-text"
+					value="#{competidor.nombre}" />
+				<br/><br/>
+				<label>Apellido: </label><h:inputText id="apellido"
+					styleClass="login-text"
+					value="#{competidor.apellido}" />
+				<br/><br/>	
+				<label>E-mail: </label><h:inputText id="mail"
+					styleClass="login-text"
+					value="#{competidor.mail}" />
+				<br/><br/>
+				<label>Peso: </label><h:inputText id="peso"
+					styleClass="login-text"
+					value="#{competidor.peso}" />
+				<br/><br/>	
+				<label>Academia: </label><h:inputText id="academia"
+					styleClass="login-text"
+					value="#{competidor.academia}" />
+				<br/><br/>
+				<label>Cinturon: </label><h:selectOneMenu value = "#{competidor.cinturon}"
+					styleClass="login-text" >
+					<f:selectItem itemValue = "Blanca" itemLabel ="Blanca" />
+					<f:selectItem itemValue = "Azul" itemLabel ="Azul"/>
+					<f:selectItem itemValue = "Violeta" itemLabel ="Violeta" />
+					<f:selectItem itemValue = "Marron" itemLabel ="Marron"/>
+					<f:selectItem itemValue = "Negra" itemLabel ="Negra" />
+					
+				</h:selectOneMenu>	
+				<br/><br/>	
+				<h:commandButton value="Registrarse" styleClass="add-student-button" action=" " />
+		</h:form>
+	</div>
+</h:body>
+
+</html>
