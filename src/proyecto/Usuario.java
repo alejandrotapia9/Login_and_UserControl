@@ -28,15 +28,6 @@ public class Usuario {
 	}
 
 	
-	public Usuario(int id, String firstName, String lastName, String tipo) {
-		super();
-		this.id = id;
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.tipo = tipo;
-	}
-
-
 	public String getUsername() {
 		return username;
 	}

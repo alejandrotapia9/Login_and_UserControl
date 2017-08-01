@@ -15,13 +15,13 @@ import javax.faces.context.FacesContext;
 
 @ManagedBean
 @SessionScoped	
-public class TorneoController {
+public class UsuariosController {
 
 	private List<Usuario> usuarios;
 	private UsuarioDB usuariodb;
 	private Logger logger = Logger.getLogger(getClass().getName());
 	
-	public TorneoController() throws Exception {
+	public UsuariosController() throws Exception {
 		usuarios = new ArrayList<>();
 		
 		usuariodb = UsuarioDB.getInstance();

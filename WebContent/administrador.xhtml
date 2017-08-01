@@ -4,7 +4,7 @@
 	xmlns:f="http://xmlns.jcp.org/jsf/core">
 
 <f:metadata>
-  <f:event type="preRenderView" listener="#{torneoController.loadUsuarios()}"/>
+  <f:event type="preRenderView" listener="#{usuariosController.loadUsuarios()}"/>
 </f:metadata>
 
 <h:head>
@@ -31,7 +31,7 @@
 
 			<h:form >
 						
-			<h:dataTable value="#{torneoController.usuarios}" var="tempUser"
+			<h:dataTable value="#{usuariosController.usuarios}" var="tempUser"
 				styleClass="demo-table" 				
 				headerClass="demo-table-header"
 				rowClasses="demo-table-odd-row,demo-table-even-row">
@@ -83,13 +83,13 @@
 					<!--  the value for each row -->
 					<h:commandButton value="Modificar" 
 					styleClass="table-button" 
-					action="#{torneoController.loadUsuario(tempUser.id)}"/>
+					action="#{usuariosController.loadUsuario(tempUser.id)}"/>
 					
 
 					<h:commandButton value="Borrar"
 						onclick="if (!confirm('Seguro?')) return false"
 						styleClass="table-button"
-						action="#{torneoController.deleteUser(tempUser.id)}"/>
+						action="#{usuariosController.deleteUser(tempUser.id)}"/>
 					
 				</h:column>
 

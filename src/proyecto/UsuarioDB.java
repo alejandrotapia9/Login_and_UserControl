@@ -49,7 +49,7 @@ public class UsuarioDB {
 		try {
 			myConn = getConnection();
 
-			String sql = "select * from usuarios where tipo='competidor' order by id";
+			String sql = "select * from usuarios where tipo ='competidor' order by id";
 
 			myStmt = myConn.createStatement();
 
@@ -133,10 +133,12 @@ public class UsuarioDB {
 				int id = myRs.getInt("id");
 				String firstName = myRs.getString("first_name");
 				String lastName = myRs.getString("last_name");
+				String username = myRs.getString("username");
+				String password = myRs.getString("password");
 				String tipo = myRs.getString("tipo");
 				
 
-				user = new Usuario(id, firstName, lastName,tipo);
+				user = new Usuario(id,username,null,firstName, lastName,tipo);
 			}
 			else {
 				throw new Exception("Could not find usuario id: " + usuarioID);

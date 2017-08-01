@@ -3,7 +3,7 @@ package proyecto;
 import javax.faces.bean.ManagedBean;
 
 @ManagedBean
-public class Competidor {
+public class Consumidor {
 	public String nombre;
 	public String apellido;
 	public String mail;
@@ -11,7 +11,7 @@ public class Competidor {
 	public String academia;
 	public String cinturon;
 	
-	public Competidor(){
+	public Consumidor(){
 		
 	}
 

@@ -9,11 +9,8 @@ import javax.faces.bean.SessionScoped;
 @ManagedBean
 @SessionScoped
 public class Login {
-	private static Login instance;
 	private String usr;
-	private String pwd;
-	
-	
+	private String pwd;	
 	
 	
 	public Login() {
@@ -64,7 +61,7 @@ public class Login {
 	}
 
 	private ResultSet getUsuarios(Connection conn) {
-		String Query = "SELECT * from usuarios where username like '"+usr+"'";
+		String Query = "SELECT username,password,roles.tipo from usuarios,roles where username like '"+usr+"'AND usuarios.tipo = roles.id_roles" ;
 		Statement st;
 		try {
 			st = conn.createStatement();
@@ -118,13 +115,6 @@ public class Login {
 		return "login_error2";
 	}
 
-	public static Login getInstance() {
-		if (instance == null) {
-			instance = new Login();
-		}
-		return instance;
-	}
-	
 }
 	
 
